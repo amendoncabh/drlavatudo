@@ -1,4 +1,4 @@
-﻿namespace ns.drlavatudo.Properties {
+﻿namespace app.drlavatudo.Properties {
     
     
     // Esta classe permite que você trate eventos específicos na classe de configurações:

@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace ns.drlavatudo
+namespace app.drlavatudo
 {
     public class BundleConfig
     {

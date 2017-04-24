@@ -6,9 +6,9 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using ns.drlavatudo.Models;
+using app.drlavatudo.Models;
 
-namespace ns.drlavatudo.Controllers
+namespace app.drlavatudo.Controllers
 {
     public class pagamentos_pedidoController : Controller
     {

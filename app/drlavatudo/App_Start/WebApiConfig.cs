@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 
-namespace ns.drlavatudo
+namespace app.drlavatudo
 {
     public static class WebApiConfig
     {

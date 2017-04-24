@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace ns.drlavatudo.Areas.Cadastros
+namespace app.drlavatudo.Areas.Cadastros
 {
     public class CadastrosAreaRegistration : AreaRegistration 
     {

@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace ns.drlavatudo.Areas.Parametros
+namespace app.drlavatudo.Areas.Parametros
 {
     public class ParametrosAreaRegistration : AreaRegistration 
     {

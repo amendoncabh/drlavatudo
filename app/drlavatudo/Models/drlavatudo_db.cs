@@ -1,4 +1,4 @@
-namespace ns.drlavatudo.Models
+namespace app.drlavatudo.Models
 {
     using System;
     using System.Data.Entity;
