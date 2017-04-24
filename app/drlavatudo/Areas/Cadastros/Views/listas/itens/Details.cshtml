@@ -1,0 +1,66 @@
+﻿@model ns.drlavatudo.Models.precos_produto
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>precos_produto</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.listas_preco.descricao)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.listas_preco.descricao)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.produtos.nome)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.produtos.nome)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.fator)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.fator)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.valor)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.valor)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.situacao)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.situacao)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.codigo }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

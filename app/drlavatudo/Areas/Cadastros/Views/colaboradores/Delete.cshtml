@@ -1,0 +1,152 @@
+﻿@model ns.drlavatudo.Models.colaboradores
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <h3>Are you sure you want to delete this?</h3>
+    <div>
+        <h4>colaboradores</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.categorias.tipo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.categorias.tipo)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.nome)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.nome)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tipo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tipo)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.cpf)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.cpf)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.logradouro)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.logradouro)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.bairro)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.bairro)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.municipio)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.municipio)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.codigo_postal)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.codigo_postal)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.unidade_federativa)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.unidade_federativa)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.pais)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.pais)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.email)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.email)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.telefone_fixo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.telefone_fixo)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.telefone_movel)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.telefone_movel)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.comissao)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.comissao)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.situacao)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.situacao)
+            </dd>
+    
+        </dl>
+    
+        @using (Html.BeginForm()) {
+            @Html.AntiForgeryToken()
+    
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-default" /> |
+                @Html.ActionLink("Back to List", "Index")
+            </div>
+        }
+    </div>
+</body>
+</html>

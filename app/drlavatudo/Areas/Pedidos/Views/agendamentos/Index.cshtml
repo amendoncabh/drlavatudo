@@ -1,0 +1,77 @@
+﻿@model IEnumerable<ns.drlavatudo.Models.agendamentos>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.colaboradores.nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.colaboradores1.nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.pedidos.situacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.quando)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.duracao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.complemento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.situacao)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.colaboradores.nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.colaboradores1.nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pedidos.situacao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.quando)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.duracao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.complemento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.situacao)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.codigo }) |
+                @Html.ActionLink("Details", "Details", new { id=item.codigo }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.codigo })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

@@ -1,0 +1,82 @@
+﻿@model ns.drlavatudo.Models.itens_pedido
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>itens_pedido</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.pedidos.situacao)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.pedidos.situacao)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.produtos.nome)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.produtos.nome)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.quantidade)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.quantidade)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.preco)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.preco)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.valor)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.valor)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.comissao)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.comissao)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.situacao)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.situacao)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.codigo }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

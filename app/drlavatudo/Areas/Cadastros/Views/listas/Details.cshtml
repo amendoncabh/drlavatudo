@@ -1,0 +1,90 @@
+﻿@model ns.drlavatudo.Models.listas_preco
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>listas_preco</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.categorias.tipo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.categorias.tipo)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.nome)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.nome)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.descricao)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.descricao)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tipo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tipo)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.validade_de)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.validade_de)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.validade_ate)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.validade_ate)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.condicao)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.condicao)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.situacao)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.situacao)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.codigo }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

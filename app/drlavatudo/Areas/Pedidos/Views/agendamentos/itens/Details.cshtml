@@ -1,0 +1,58 @@
+﻿@model ns.drlavatudo.Models.itens_agendamento
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>itens_agendamento</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.agendamentos.complemento)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.agendamentos.complemento)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.itens_pedido.situacao)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.itens_pedido.situacao)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.complemento)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.complemento)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.situacao)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.situacao)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.codigo }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

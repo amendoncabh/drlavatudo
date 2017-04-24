@@ -1,0 +1,58 @@
+﻿@model ns.drlavatudo.Models.unidades_medida
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>unidades_medida</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.nome)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.nome)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.grandeza)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.grandeza)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.simbolo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.simbolo)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.fator)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.fator)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.codigo }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

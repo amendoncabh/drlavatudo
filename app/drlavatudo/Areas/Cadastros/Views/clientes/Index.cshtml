@@ -1,0 +1,125 @@
+﻿@model IEnumerable<ns.drlavatudo.Models.clientes>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.categorias.tipo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tipo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.eh_empresa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cpf_cnpj)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.logradouro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.bairro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.municipio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.codigo_postal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.unidade_federativa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.pais)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.telefone_fixo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.telefone_movel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.situacao)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.categorias.tipo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tipo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.eh_empresa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cpf_cnpj)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.logradouro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.bairro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.municipio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.codigo_postal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.unidade_federativa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pais)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.telefone_fixo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.telefone_movel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.situacao)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.codigo }) |
+                @Html.ActionLink("Details", "Details", new { id=item.codigo }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.codigo })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

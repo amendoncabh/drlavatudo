@@ -1,0 +1,71 @@
+﻿@model IEnumerable<ns.drlavatudo.Models.metodos_pagamento>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tipo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.prefixo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.sufixo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.termo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.situacao)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tipo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.prefixo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.sufixo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.termo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.situacao)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.codigo }) |
+                @Html.ActionLink("Details", "Details", new { id=item.codigo }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.codigo })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

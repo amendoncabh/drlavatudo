@@ -1,0 +1,65 @@
+﻿@model IEnumerable<ns.drlavatudo.Models.regioes>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.codigo_postal_de)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.codigo_postal_ate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.municipio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.unidade_federativa)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.codigo_postal_de)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.codigo_postal_ate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.municipio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.unidade_federativa)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.codigo }) |
+                @Html.ActionLink("Details", "Details", new { id=item.codigo }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.codigo })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

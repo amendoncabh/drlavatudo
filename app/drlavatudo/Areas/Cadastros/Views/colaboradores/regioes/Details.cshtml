@@ -1,0 +1,50 @@
+﻿@model ns.drlavatudo.Models.colaboradoresXregioes
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>colaboradoresXregioes</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.colaboradores.nome)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.colaboradores.nome)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.regioes.nome)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.regioes.nome)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.situacao)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.situacao)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.codigo }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

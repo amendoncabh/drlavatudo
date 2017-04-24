@@ -1,0 +1,82 @@
+﻿@model ns.drlavatudo.Models.agendamentos
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>agendamentos</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.colaboradores.nome)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.colaboradores.nome)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.colaboradores1.nome)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.colaboradores1.nome)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.pedidos.situacao)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.pedidos.situacao)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.quando)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.quando)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.duracao)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.duracao)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.complemento)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.complemento)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.situacao)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.situacao)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.codigo }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

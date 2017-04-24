@@ -1,0 +1,55 @@
+﻿@model IEnumerable<ns.drlavatudo.Models.pedidos>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Pedidos</title>
+    <script>
+        var myGrid = $('#jqGrid');
+        myGrid.jqGrid({
+            url: '/Pedidos/jqGrid/',
+            datatype: "json",
+            contentType: "application/json; charset-utf-8",
+            mtype: 'GET',
+            colNames: [ @Html.DisplayNameFor(model => model.codigo),
+                        @Html.DisplayNameFor(model => model.clientes.nome),
+                        @Html.DisplayNameFor(model => model.colaboradores.nome),
+                        @Html.DisplayNameFor(model => model.listas_preco.nome),
+                        @Html.DisplayNameFor(model => model.registrado_em),
+                        @Html.DisplayNameFor(model => model.valido_ate),
+                        @Html.DisplayNameFor(model => model.comissao),
+                        @Html.DisplayNameFor(model => model.situacao),
+                        'Action'],
+            colModel: [
+                { name: @Html.DisplayNameFor(model => model.codigo), key: true, width: 75 },
+                { name: @Html.DisplayNameFor(model => model.clientes.nome), key: true, width: 200 },
+                { name: @Html.DisplayNameFor(model => model.colaboradores.nome), key: true, width: 200 },
+                { name: @Html.DisplayNameFor(model => model.listas_preco.nome), key: true, width: 200 },
+                { name: @Html.DisplayNameFor(model => model.registrado_em), key: true, width: 75 },
+                { name: @Html.DisplayNameFor(model => model.valido_ate), key: true, width: 75 },
+                { name: @Html.DisplayNameFor(model => model.comissao), key: true, width: 75 },
+                { name: @Html.DisplayNameFor(model => model.situacao), key: true, width: 75 },
+                { name: 'Edit', key: true, width: 100, editable: true, formatter: editButton }
+            ],
+            rowNum: 10,
+            pager: '#jqGridPager',
+            gridview: true,
+            rownumbers: true,
+            pagerpos: 'center'
+        });
+    </script>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table id="jqGrid"></table>
+    <div id="jqGridPager"></div>
+</body>
+</html>
