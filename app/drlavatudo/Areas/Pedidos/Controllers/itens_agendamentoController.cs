@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
 using app.drlavatudo.Models;
+using app.drlavatudo.Areas.Pedidos.Models;
 
-namespace app.drlavatudo.Controllers
+namespace app.drlavatudo.Areas.Pedidos.Controllers
 {
     public class itens_agendamentoController : Controller
     {

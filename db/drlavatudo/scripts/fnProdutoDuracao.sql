@@ -12,7 +12,7 @@ BEGIN
 		@duracao = CASE u.grandeza when 'T' THEN p.quantidade / u.fator * @quantidade ELSE 0 END
 
 	FROM
-		dbo.produto AS p
+		dbo.produtos AS p
 			INNER JOIN unidades_medida AS u ON u.codigo = p.unidade_medida
 
 	WHERE

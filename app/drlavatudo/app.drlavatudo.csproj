@@ -13,7 +13,7 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>drlavatudo</RootNamespace>
+    <RootNamespace>app.drlavatudo</RootNamespace>
     <AssemblyName>drlavatudo</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
@@ -35,6 +35,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -559,16 +560,16 @@
     <Content Include="Areas\Parametros\Views\metodos_pagamento\Details.cshtml" />
     <Content Include="Areas\Parametros\Views\metodos_pagamento\Edit.cshtml" />
     <Content Include="Areas\Parametros\Views\metodos_pagamento\Index.cshtml" />
-    <Content Include="Areas\Pedidos\Views\pedidos\Create.cshtml" />
-    <Content Include="Areas\Pedidos\Views\pedidos\Delete.cshtml" />
-    <Content Include="Areas\Pedidos\Views\pedidos\Details.cshtml" />
-    <Content Include="Areas\Pedidos\Views\pedidos\Edit.cshtml" />
-    <Content Include="Areas\Pedidos\Views\pedidos\Index.cshtml" />
-    <Content Include="Areas\Pedidos\Views\pedidos\itens\Create.cshtml" />
-    <Content Include="Areas\Pedidos\Views\pedidos\itens\Delete.cshtml" />
-    <Content Include="Areas\Pedidos\Views\pedidos\itens\Details.cshtml" />
-    <Content Include="Areas\Pedidos\Views\pedidos\itens\Edit.cshtml" />
-    <Content Include="Areas\Pedidos\Views\pedidos\itens\Index.cshtml" />
+    <Content Include="Areas\Pedidos\Views\cadastros\Create.cshtml" />
+    <Content Include="Areas\Pedidos\Views\cadastros\Delete.cshtml" />
+    <Content Include="Areas\Pedidos\Views\cadastros\Details.cshtml" />
+    <Content Include="Areas\Pedidos\Views\cadastros\Edit.cshtml" />
+    <Content Include="Areas\Pedidos\Views\cadastros\Index.cshtml" />
+    <Content Include="Areas\Pedidos\Views\cadastros\itens\Create.cshtml" />
+    <Content Include="Areas\Pedidos\Views\cadastros\itens\Delete.cshtml" />
+    <Content Include="Areas\Pedidos\Views\cadastros\itens\Details.cshtml" />
+    <Content Include="Areas\Pedidos\Views\cadastros\itens\Edit.cshtml" />
+    <Content Include="Areas\Pedidos\Views\cadastros\itens\Index.cshtml" />
     <Content Include="Areas\Pedidos\Views\agendamentos\Create.cshtml" />
     <Content Include="Areas\Pedidos\Views\agendamentos\Delete.cshtml" />
     <Content Include="Areas\Pedidos\Views\agendamentos\Details.cshtml" />
@@ -609,11 +610,11 @@
     <Content Include="Areas\Cadastros\Views\listas\itens\Details.cshtml" />
     <Content Include="Areas\Cadastros\Views\listas\itens\Edit.cshtml" />
     <Content Include="Areas\Cadastros\Views\listas\itens\Index.cshtml" />
-    <Content Include="Areas\Pedidos\Views\pedidos\pagamentos\Create.cshtml" />
-    <Content Include="Areas\Pedidos\Views\pedidos\pagamentos\Delete.cshtml" />
-    <Content Include="Areas\Pedidos\Views\pedidos\pagamentos\Details.cshtml" />
-    <Content Include="Areas\Pedidos\Views\pedidos\pagamentos\Edit.cshtml" />
-    <Content Include="Areas\Pedidos\Views\pedidos\pagamentos\Index.cshtml" />
+    <Content Include="Areas\Pedidos\Views\cadastros\pagamentos\Create.cshtml" />
+    <Content Include="Areas\Pedidos\Views\cadastros\pagamentos\Delete.cshtml" />
+    <Content Include="Areas\Pedidos\Views\cadastros\pagamentos\Details.cshtml" />
+    <Content Include="Areas\Pedidos\Views\cadastros\pagamentos\Edit.cshtml" />
+    <Content Include="Areas\Pedidos\Views\cadastros\pagamentos\Index.cshtml" />
     <Content Include="Areas\Cadastros\Views\colaboradores\regioes\Create.cshtml" />
     <Content Include="Areas\Cadastros\Views\colaboradores\regioes\Delete.cshtml" />
     <Content Include="Areas\Cadastros\Views\colaboradores\regioes\Details.cshtml" />

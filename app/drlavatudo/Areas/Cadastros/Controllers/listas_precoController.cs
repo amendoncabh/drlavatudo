@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
 using app.drlavatudo.Models;
+using app.drlavatudo.Areas.Cadastros.Models;
 
-namespace app.drlavatudo.Controllers
+namespace app.drlavatudo.Areas.Cadastros.Controllers
 {
     public class listas_precoController : Controller
     {

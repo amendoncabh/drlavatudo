@@ -1,7 +1,7 @@
-﻿@model IEnumerable<drlavatudo.Models.pedidos>
+﻿@model IEnumerable<app.drlavatudo.Areas.Pedidos.Models.pedidos>
 
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <!DOCTYPE html>
@@ -13,7 +13,7 @@
     <script>
         var myGrid = $('#jqGrid');
         myGrid.jqGrid({
-            url: '/Pedidos/jqGrid/',
+            url: '/Pedidos/Cadastros/jqGrid/',
             datatype: "json",
             contentType: "application/json; charset-utf-8",
             mtype: 'GET',

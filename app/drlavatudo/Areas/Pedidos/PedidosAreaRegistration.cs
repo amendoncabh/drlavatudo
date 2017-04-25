@@ -15,9 +15,9 @@ namespace app.drlavatudo.Areas.Pedidos
         public override void RegisterArea(AreaRegistrationContext context) 
         {
             context.MapRoute(
-                "Pedidos_default",
-                "Pedidos/{controller}/{action}/{id}",
-                new { controller = "Pedidos", action = "Index", id = UrlParameter.Optional }
+                name:"Pedidos_default",
+                url: "Pedidos/{controller}/{action}/{id}",
+                defaults: new { controller = "Pedidos", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

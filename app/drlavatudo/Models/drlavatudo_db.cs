@@ -1,9 +1,9 @@
 namespace app.drlavatudo.Models
 {
-    using System;
     using System.Data.Entity;
-    using System.ComponentModel.DataAnnotations.Schema;
-    using System.Linq;
+    using app.drlavatudo.Areas.Cadastros.Models;
+    using app.drlavatudo.Areas.Parametros.Models;
+    using app.drlavatudo.Areas.Pedidos.Models;
 
     public partial class drlavatudo_db : DbContext
     {

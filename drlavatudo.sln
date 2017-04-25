@@ -6,9 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "db.drlavatudo", "db\drlavatudo\db.drlavatudo.sqlproj", "{C945A1A4-E9FE-4012-B7DA-CD27BF709712}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "app.drlavatudo", "app\drlavatudo\app.drlavatudo.csproj", "{FD2144F0-F041-402F-8899-4704BDD3C443}"
-	ProjectSection(ProjectDependencies) = postProject
-		{C945A1A4-E9FE-4012-B7DA-CD27BF709712} = {C945A1A4-E9FE-4012-B7DA-CD27BF709712}
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4092AB12-1BD8-42AC-9CE0-348530F3BA2E}"
 	ProjectSection(SolutionItems) = preProject
